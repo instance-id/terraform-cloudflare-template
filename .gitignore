@@ -1,0 +1,9 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files - Typically you want this ignored but not for this template
+# *.tfvars
