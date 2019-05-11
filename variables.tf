@@ -1,4 +1,4 @@
-// Indecisivedev Cloudflare
+// Cloudflare variables
 variable "cloudflare_email" {
     description = "Cloudflare User Email"
 }
