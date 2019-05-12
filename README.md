@@ -1,7 +1,7 @@
 # terraform-cloudflare-template
 A terraform template for managing Cloudflare DNS
 
-Places in the code that have "1domain1" need to be replaced with your actual domain name. Most things can use the variable file to get the domain name, but a few places require it to be hard coded. 
+Places in the code that have "1domain1" can to be replaced with your actual domain name if you are going to be managing multiple domains. Most things can use the variable file to get the domain name, but a few places require hard coded input.  I found it easier to just have a DNS folder and then a folder for each domain to manage them separetly as there is not many times when I need to make changes to many at once, even if I did, it would not take long to just run through each one. That is up to your personal situation, though. 
 
 It is named 1domain1 so that you can quickly do a replace-all and insert your domain in it's place!
 
