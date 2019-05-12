@@ -35,4 +35,6 @@ If the changes look like what you are expecting, you can finalize and perform th
 
     terraform apply -var-file=variables.tfvars
 
+Do note that the first time you run apply it will create the DNS zone within Cloudflare but will not apply the zone records. You may have to wait a few minutes for everything to be created on their side. Once the domain zone is created, go look at your Cloudflare account for the new domain and open it's dashboard. It will give you your assigned DNS Nameservers. These will need to be input into your domains registrar to point your name to Cloudflare. Once this is completed you should be able to run ```terraform apply``` again for it to create the actual records.
+
 Thanks!
