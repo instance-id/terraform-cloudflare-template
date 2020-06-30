@@ -7,3 +7,7 @@
 
 # .tfvars files - Typically you want this ignored but not for this template
 # *.tfvars
+
+.history/
+.vscode/
+.idea/
