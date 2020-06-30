@@ -1,14 +1,18 @@
 // Cloudflare variables
 variable "cloudflare_email" {
-    description = "Cloudflare User Email"
+  description = "Cloudflare User Email"
 }
 
-variable "cloudflare_apikey" {
-    description = "Cloudflare User Token"
+variable "cloudflare_api_key" {
+  description = "Cloudflare User Token"
+}
+
+variable "cloudflare_zone" {
+  default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 
 variable "cloudflare_domain" {
-    default = "1domain1"
+  default = "1domain1"
 }
 
 variable "cloudflare_ip_primary" {
@@ -20,5 +24,5 @@ variable "cloudflare_ip_secondary" {
 }
 
 variable "cloudflare_txt_google_verification" {
-  description="Google Site Verification TXT"
+  description = "Google Site Verification TXT"
 }

@@ -17,11 +17,11 @@ To use, fill out the necessary values, make sure you have [Terraform installed](
     
 which will download the Cloudflare plugin and get things setup initially. Then you can type in: 
 
-    terraform plan -var-file=variables.tfvars
+    terraform plan --var-file=variables.tfvars
 
 If the changes look like what you are expecting, you can finalize and perform the actions by using:
 
-    terraform apply -var-file=variables.tfvars
+    terraform apply --var-file=variables.tfvars
 
 Do note that the first time you run apply it will create the DNS zone within Cloudflare but will not apply the zone records. You may have to wait a few minutes for everything to be created on their side. Once the domain zone is created, go look at your Cloudflare account for the new domain and open it's dashboard. It will give you your assigned DNS Nameservers. These will need to be input into your domains registrar to point your name to Cloudflare. Once this is completed you should be able to run ```terraform apply``` again for it to create the actual records.
 
